@@ -6,9 +6,16 @@ print('--'*15)
 n3 = int(input('Insira o Terceiro Número \nNúmero: '))
 print('--'*15)
 # Condições
-if n1 > n2 and n1 > n3:
-    print('O maior Número é o {}'.format(n1))
+maior = n1
 if n2 > n1 and n2 > n3:
-    print('O Maior Número é o {}'.format(n2))
-else:
-    print('O Maior Número é o Número {}'.format(n3))
+    maior = n2
+if n3 > n2 and n3 > n2: 
+    maior = n3
+menor = n1
+if n2 < n1 and n2 < n3:
+    menor = n2
+if n3 < n2 and n3 < n1:
+    menor = n3
+# print
+print('O maior número é o {}'.format(maior))
+print('O menor número é o {}'.format(menor))
